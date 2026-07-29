@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Rammetto+One&display=swap');
+
+/************* Global Styles *************/
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --space-small: 1rem;
+}
+
+html {
+  background-image: linear-gradient(to bottom, #f1d1c2, #ba8f79);
+  font-family: 'Jost', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  block-size: auto;
+  max-width: 100%;
+}
+
+#wrapper {
+  display: grid;
+  justify-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/************* Body Dark *************/
+
+html.dark-mode {
+  background-image: linear-gradient(to bottom, #0d1135, #ba8f79);
+  color: #fff;
+}
+
+html.dark-mode #artist-favorite h3 {
+  color: #000;
+}
+
+html.dark-mode #cover-art {
+  border-color: #fff;
+}
+
+html.dark-mode #top-content li a {
+  color: #fff;
+}
+
+/************* Nav *************/
+
+#top-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 2rem;
+}
+
+#nav-checkbox {
+  display: none;
+}
+
+#nav-trigger {
+  background-color: #0d1135;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: var(--space-small);
+  padding: 0.3rem 0.7rem;
+}
+
+#top-content nav ul {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+#nav-checkbox:checked ~ nav ul {
+  display: flex;
+  padding: 2rem;
+}
+
+#top-content nav a {
+  color: #000;
+  display: block;
+  padding: 1rem 0;
+  text-decoration: none;
+}
+
+/************* Header *************/
+
+h1 {
+  display: flex;
+  font-family:'Rammetto One', sans-serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  justify-content: center;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+header > p {
+  font-weight: 200;
+  margin: 0 3rem;
+}
+
+/************* Main *************/
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/************* Artist Section *************/
+
+h2 {
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  justify-content: center;
+  margin-top: var(--space-small);
+}
+
+#cover-art {
+  height: 252px;
+  width: 256px;
+}
+
+#artist-favorite {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+#star button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+#star {
+  display: block;
+  height: 25px;
+  margin-bottom: var(--space-small);
+  width: 25px;
+}
+
+h3 {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-size: 10px;
+  font-weight: 200;
+  margin-top: 5px;
+}
+
+/************* Music Player/Toggle Section *************/
+
+main section:last-child {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#music {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#music-player-toggle button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+#music-player-toggle {
+  display: block;
+  height: 82px;
+  margin-top: var(--space-small);
+  width: 236px;
+}
+
+#track button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+#track {
+  display: block;
+  height: 15px;
+  margin-top: var(--space-small);
+  width: 255px;
+}
+
+#toggle button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: var(--space-small);
+  padding: 0;
+}
+
+#toggle {
+  display: block;
+  height: 20px;
+  margin-bottom: 2.5rem;
+  margin-top: var(--space-small);
+  width: 45px;
+}
+
+#content {
+  margin: 1rem 2rem 2rem;
+}
+
+/************* Footer *************/
+
+#top-footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#bottom-footer {
+  align-items: center;
+  display: flex;
+  gap: var(--space-small);
+  justify-content: space-between;
+}
+
+footer nav ul {
+  display: flex;
+  list-style: none;
+  margin: 10px;
+  padding: 0;
+}
+
+footer nav li {
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+footer nav a {
+  color: #fff;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+#download button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+#download {
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+#socials {
+  display: flex;
+  gap: .3rem;
+  height: 14px;
+  margin-right: 4rem;
+  width: 14px;
+}
+
+#socials img {
+  margin-left: 5px;
+}
+
+#terms {
+  font-size: 12px;
+}
+
+/********** Media Queries **********/
+
+/********** 768px **********/
+@media screen and (min-width: 768px) {
+  #top-content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 2rem;
+  }
+
+  #top-content nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+  }
+
+  #top-content nav li {
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  #top-content nav a {
+    padding: 0 10px;
+    text-decoration: none;
+  }
+
+  #nav-trigger {
+    cursor: pointer;
+    display: none;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  #nav-trigger,
+  #nav-checkbox {
+    display: none;
+  }
+
+  h1 {
+    font-size: clamp(3rem, 6vw, 5.5rem);
+  }
+
+  h3 {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+  }
+
+  h4 {
+    font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+  }
+
+  #cover-art {
+    block-size: 400px;
+    width: 400px;
+  }
+
+  #music-player-toggle {
+    block-size: auto;
+    width: 350px;
+  }
+
+  #toggle {
+    block-size: auto;
+    width: 60px;
+  }
+
+  content {
+    margin: 0 5rem 2rem;
+  }
+
+  #bottom-footer {
+    margin-top: 1rem;
+    gap: 12rem;
+  }
+
+  #socials {
+    margin-right: 0;
+  }
+}
+
+/********** 1024px **********/
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: clamp(3.5rem, 5vw, 6.5rem);
+  }
+
+  h3 {
+    font-size: clamp(1.2rem, 1.5vw, 2rem);
+  }
+
+  h4 {
+    font-size: clamp(1rem, 1vw, 1.5rem);
+  }
+
+  #cover-art {
+    block-size: 500px;
+    width: 500px;
+  }
+
+  #music-player-toggle {
+    block-size: auto;
+    width: 472px;
+  }
+
+  #toggle {
+    block-size: auto;
+    width: 80px;
+  }
+
+  #bottom-footer {
+    gap: 22rem;
+    margin-top: 2rem;
+  }
+
+  #socials {
+    margin-right: 0;
+  }
+}
