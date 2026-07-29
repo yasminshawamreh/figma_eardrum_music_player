@@ -38,7 +38,7 @@ let isPlaying = false;
 
 musicBtn.addEventListener('click', () => {
   isPlaying = !isPlaying;
-  musicImg.src = isPlaying ? 'imgs/PAUSE.png' : 'imgs/PLAY.png';
+  musicImg.src = isPlaying ? 'imgs/pause.png' : 'imgs/play.png';
 });
 
 /* Toggle */
